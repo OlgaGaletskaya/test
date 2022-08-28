@@ -101,7 +101,7 @@ body {
 }
 .cards__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -129,6 +129,9 @@ body {
   line-height: 100%;
   align-items: center;
   margin-top: -15px;
+}
+.card__price {
+  text-align: center;
 }
 .card__amount {
   display: flex;
@@ -183,7 +186,31 @@ body {
 
 @media (max-width: 1240px) {
   .card {
-    max-width: 212px;
-    min-width: 193px;
+    width: 212px;
+  }
+}
+@media (max-width: 940px) {
+  .card {
+    width: 193px;
+  }
+}
+@media (max-width: 861px) {
+  .card {
+    width: 212px;
+  }
+}
+@media (max-width: 705px) {
+  .card {
+    width: 193px;
+  }
+}
+@media (max-width: 640px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .card {
+    width: 212px;
   }
 }/*# sourceMappingURL=style.css.map */
