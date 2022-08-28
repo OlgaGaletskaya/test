@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.91c79317.css",
-    "main.js": "/test/static/js/main.0f9c43fe.js",
+    "main.css": "/test/static/css/main.71fa48bd.css",
+    "main.js": "/test/static/js/main.03e01b09.js",
     "static/media/NeueMachina-Black.eot": "/test/static/media/NeueMachina-Black.e80dfe8ab92b9140abf5.eot",
     "static/media/NeueMachina-Black.ttf": "/test/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
     "static/media/NeueMachina-Ultralight.eot": "/test/static/media/NeueMachina-Ultralight.7db092654583b2c71beb.eot",
@@ -32,11 +32,11 @@
     "static/media/NeueMachina-Light.woff2": "/test/static/media/NeueMachina-Light.418f63ac88af6ed51de9.woff2",
     "static/media/sale.svg": "/test/static/media/sale.3ed8e817cb0ad2a46f3a.svg",
     "index.html": "/test/index.html",
-    "main.91c79317.css.map": "/test/static/css/main.91c79317.css.map",
-    "main.0f9c43fe.js.map": "/test/static/js/main.0f9c43fe.js.map"
+    "main.71fa48bd.css.map": "/test/static/css/main.71fa48bd.css.map",
+    "main.03e01b09.js.map": "/test/static/js/main.03e01b09.js.map"
   },
   "entrypoints": [
-    "static/css/main.91c79317.css",
-    "static/js/main.0f9c43fe.js"
+    "static/css/main.71fa48bd.css",
+    "static/js/main.03e01b09.js"
   ]
 }
