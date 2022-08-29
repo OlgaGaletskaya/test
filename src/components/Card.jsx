@@ -28,9 +28,20 @@ const Card = (props) => {
             </div>
             <div className='card__price'>{props.item.price} руб.</div>
             <div className='card__amount'>
-                <div className='card__button' onClick={increment}>+</div>
+                <div className='card__button' onClick={increment}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.950684 0.27124H32.9507V32.2712H0.950684V0.27124ZM2.83304 2.21063V30.3318H31.0683V2.21063H2.83304Z" fill="black"/>
+                    <path d="M12.2097 15.4966H22.1981V17.4943H12.2097V15.4966Z" fill="black"/>
+                    </svg>
+                </div>
                 <div>{amount}</div>
-                <div className='card__button' onClick={decrement}>-</div>
+                <div className='card__button  card__plus' onClick={decrement}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.939087 0.27124H32.9391V32.2712H0.939087V0.27124ZM2.82144 2.21063V30.3318H31.0567V2.21063H2.82144Z" fill="black"/>
+                    <path d="M18.7295 11.4966V21.4966H16.7295L16.7295 11.4966H18.7295Z" fill="black"/>
+                    <path d="M12.7365 15.4919H22.7365V17.4919H12.7365V15.4919Z" fill="black"/>
+                    </svg>
+                </div>
             </div>
         </div>
         <div className='card__name'>{props.item.name}</div>

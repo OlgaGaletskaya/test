@@ -76,7 +76,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  padding: 10px;
+}
+
+.app {
+  width: 100%;
 }
 
 .header {
@@ -95,19 +98,23 @@ body {
   gap: 5px;
   align-items: center;
 }
+.header__moretxt {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
 .cards {
   padding-top: 55px;
 }
 .cards__inner {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: minmax(163px, auto);
+  grid-column-gap: 23px;
 }
 
 .card {
-  width: 330px;
   position: relative;
 }
 .card__img-container {
@@ -117,7 +124,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 13px auto 0;
-  width: 100%;
+  width: 225px;
 }
 .card__img {
   height: 140px;
@@ -137,17 +144,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
 .card__amount div {
-  width: 30px;
+  min-width: 30px;
   text-align: center;
 }
 .card__button {
   cursor: pointer;
-  width: 30px;
-  height: 28px;
-  border: 2px solid #000000;
+  width: 32px;
 }
 .card__name {
   font-size: 12px;
@@ -180,37 +185,51 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  width: 1110px;
   margin: 0 auto;
 }
 
-@media (max-width: 1240px) {
-  .card {
-    width: 212px;
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .app {
+    padding: 0 45px;
   }
 }
-@media (max-width: 940px) {
-  .card {
-    width: 193px;
+@media (max-width: 1024px) {
+  .app {
+    padding: 0 40px;
+  }
+  .cards__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__plus {
+    display: block;
+  }
+  .card__amount div:not(:last-child) {
+    display: none;
+  }
+  .card__img-container {
+    width: 100%;
   }
 }
-@media (max-width: 861px) {
-  .card {
-    width: 212px;
+@media (max-width: 744px) {
+  .app {
+    padding: 0 30px;
+  }
+  .cards__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__moretxt div:not(:first-child) {
+    display: none;
   }
 }
-@media (max-width: 705px) {
-  .card {
-    width: 193px;
+@media (max-width: 375px) {
+  .app {
+    padding: 0 25px;
   }
-}
-@media (max-width: 640px) {
-  .header__inner {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-  }
-  .card {
-    width: 212px;
+  .cards__inner {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
